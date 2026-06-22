@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drunk to Survive — F1 2026 Contest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="speed-stripe"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="title" id="siteTitle">DRUNK<span class="to">2</span>SURVIVE</h1>
+      <p class="subtitle" id="siteSubtitle">F1 2026 Championship Contest</p>
+      <p class="mock-flag" id="mockFlag" hidden>⚠️ Showing sample data — real results not wired up yet</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HEAD TO HEAD BUBBLES -->
+    <section class="h2h" id="h2h" aria-label="Head to head">
+      <!-- contender cards injected here -->
+    </section>
+
+    <!-- THE TRACE -->
+    <section class="panel">
+      <div class="panel-head">
+        <h2>The Trace</h2>
+        <span class="hint">Cumulative points after every Grand Prix</span>
+      </div>
+      <div class="chart-box">
+        <canvas id="traceChart"></canvas>
+      </div>
+    </section>
+
+    <!-- STANDINGS -->
+    <section class="panel">
+      <div class="panel-head"><h2>Standings</h2></div>
+      <div class="table-scroll">
+        <table class="grid" id="standingsTable"></table>
+      </div>
+    </section>
+
+    <!-- PER RACE BREAKDOWN -->
+    <section class="panel">
+      <div class="panel-head"><h2>Per-Race Breakdown</h2></div>
+      <div class="table-scroll">
+        <table class="grid" id="breakdownTable"></table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <span id="updatedAt"></span>
+    <span class="sep">•</span>
+    <a href="https://github.com/Juangav95/drunk-to-survive" target="_blank" rel="noopener">Repo on GitHub</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

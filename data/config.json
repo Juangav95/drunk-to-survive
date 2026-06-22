@@ -1,0 +1,39 @@
+{
+  "season": 2026,
+  "title": "Drunk to Survive",
+  "subtitle": "F1 2026 Championship Contest — Gav vs Nico",
+  "contenders": [
+    {
+      "id": "gav",
+      "name": "Gav",
+      "photo": "",
+      "color": "#00D2BE",
+      "drivers": [
+        { "id": "antonelli", "name": "Antonelli" },
+        { "id": "piastri", "name": "Piastri" },
+        { "id": "hadjar", "name": "Hadjar" }
+      ],
+      "teams": [
+        { "id": "mercedes", "name": "Mercedes" },
+        { "id": "red_bull", "name": "Red Bull" },
+        { "id": "williams", "name": "Williams" }
+      ]
+    },
+    {
+      "id": "nico",
+      "name": "Nico",
+      "photo": "",
+      "color": "#E8002D",
+      "drivers": [
+        { "id": "hamilton", "name": "Hamilton" },
+        { "id": "antonelli", "name": "Antonelli" },
+        { "id": "colapinto", "name": "Colapinto" }
+      ],
+      "teams": [
+        { "id": "ferrari", "name": "Ferrari" },
+        { "id": "alpine", "name": "Alpine" },
+        { "id": "cadillac", "name": "Cadillac" }
+      ]
+    }
+  ]
+}

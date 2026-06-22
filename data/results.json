@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-06-22T16:00:00Z",
+  "season": 2026,
+  "mock": true,
+  "rounds": [
+    {
+      "round": 1,
+      "name": "Australian Grand Prix",
+      "short": "AUS",
+      "date": "2026-03-08",
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": 43, "teams": 42, "weekend": 85, "cumulative": 85,
+          "driverDetail": { "antonelli": 18, "piastri": 25, "hadjar": 0 },
+          "teamDetail": { "mercedes": 30, "red_bull": 10, "williams": 2 }
+        },
+        "nico": {
+          "drivers": 33, "teams": 31, "weekend": 64, "cumulative": 64,
+          "driverDetail": { "hamilton": 15, "antonelli": 18, "colapinto": 0 },
+          "teamDetail": { "ferrari": 27, "alpine": 4, "cadillac": 0 }
+        }
+      }
+    },
+    {
+      "round": 2,
+      "name": "Chinese Grand Prix",
+      "short": "CHN",
+      "date": "2026-03-22",
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": 30, "teams": 38, "weekend": 68, "cumulative": 153,
+          "driverDetail": { "antonelli": 10, "piastri": 18, "hadjar": 2 },
+          "teamDetail": { "mercedes": 22, "red_bull": 14, "williams": 2 }
+        },
+        "nico": {
+          "drivers": 40, "teams": 35, "weekend": 75, "cumulative": 139,
+          "driverDetail": { "hamilton": 18, "antonelli": 10, "colapinto": 12 },
+          "teamDetail": { "ferrari": 28, "alpine": 7, "cadillac": 0 }
+        }
+      }
+    },
+    {
+      "round": 3,
+      "name": "Japanese Grand Prix",
+      "short": "JPN",
+      "date": "2026-04-05",
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": 25, "teams": 30, "weekend": 55, "cumulative": 208,
+          "driverDetail": { "antonelli": 12, "piastri": 13, "hadjar": 0 },
+          "teamDetail": { "mercedes": 20, "red_bull": 8, "williams": 2 }
+        },
+        "nico": {
+          "drivers": 35, "teams": 33, "weekend": 68, "cumulative": 207,
+          "driverDetail": { "hamilton": 20, "antonelli": 12, "colapinto": 3 },
+          "teamDetail": { "ferrari": 26, "alpine": 7, "cadillac": 0 }
+        }
+      }
+    },
+    {
+      "round": 4,
+      "name": "Bahrain Grand Prix",
+      "short": "BHR",
+      "date": "2026-04-19",
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": 38, "teams": 41, "weekend": 79, "cumulative": 287,
+          "driverDetail": { "antonelli": 20, "piastri": 18, "hadjar": 0 },
+          "teamDetail": { "mercedes": 28, "red_bull": 11, "williams": 2 }
+        },
+        "nico": {
+          "drivers": 22, "teams": 28, "weekend": 50, "cumulative": 257,
+          "driverDetail": { "hamilton": 2, "antonelli": 20, "colapinto": 0 },
+          "teamDetail": { "ferrari": 24, "alpine": 4, "cadillac": 0 }
+        }
+      }
+    },
+    {
+      "round": 5,
+      "name": "Saudi Arabian Grand Prix",
+      "short": "SAU",
+      "date": "2026-05-03",
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": 20, "teams": 26, "weekend": 46, "cumulative": 333,
+          "driverDetail": { "antonelli": 8, "piastri": 12, "hadjar": 0 },
+          "teamDetail": { "mercedes": 16, "red_bull": 8, "williams": 2 }
+        },
+        "nico": {
+          "drivers": 33, "teams": 36, "weekend": 69, "cumulative": 326,
+          "driverDetail": { "hamilton": 18, "antonelli": 8, "colapinto": 7 },
+          "teamDetail": { "ferrari": 29, "alpine": 7, "cadillac": 0 }
+        }
+      }
+    }
+  ]
+}

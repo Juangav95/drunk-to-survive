@@ -83,6 +83,15 @@ def short_code(race_name):
     return SHORT_OVERRIDES.get(first, first[:3].upper())
 
 
+def fetch_total_rounds(season):
+    """Total number of rounds scheduled this season (for progress display)."""
+    try:
+        data = fetch_json(f"{API_BASE}/{season}/races/?format=json&limit=1")
+        return int(data["MRData"]["total"])
+    except Exception:
+        return 0
+
+
 def points_maps(race, sprint):
     """
     Build {driverId: points} and {constructorId: points} for one weekend,
@@ -162,10 +171,13 @@ def main():
         print(f"  R{rnd} {race['raceName']}: "
               + ", ".join(f"{c['name']} D={scores[c['id']]['drivers']['round']}/T={scores[c['id']]['teams']['round']}" for c in contenders))
 
+    total_rounds = fetch_total_rounds(season)
+
     output = {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "season": season,
         "source": "Jolpica-F1 API (api.jolpi.ca)",
+        "total_rounds": total_rounds,
         "rounds": out_rounds,
     }
 
@@ -179,7 +191,7 @@ def main():
         try:
             with open(OUTPUT_PATH, encoding="utf-8") as f:
                 existing = json.load(f)
-            if existing.get("rounds") == out_rounds:
+            if existing.get("rounds") == out_rounds and existing.get("total_rounds") == total_rounds:
                 print("\nNo result changes since last run — results.json left untouched.")
                 return 0
         except (json.JSONDecodeError, OSError):

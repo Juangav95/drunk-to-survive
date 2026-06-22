@@ -62,6 +62,29 @@ body {
 .tab.is-active { color: var(--text); border-bottom-color: var(--f1-red); }
 .contest-caption { color: var(--muted); font-size: 0.85rem; margin: 12px 0 0; }
 
+.season-progress {
+  margin-top: 8px; color: var(--text); font-weight: 600; font-size: 0.82rem;
+  display: inline-block; padding: 5px 12px; border-radius: 999px;
+  background: rgba(255,255,255,0.05); border: 1px solid var(--line);
+}
+
+/* pick chips */
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; margin: 3px;
+  padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 600;
+  background: rgba(255,255,255,0.06); border: 1px solid var(--line); color: var(--text);
+}
+.chip-dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.contender .picks { display: flex; flex-wrap: wrap; justify-content: center; }
+.chips-cell { display: flex; flex-wrap: wrap; gap: 2px; }
+
+/* sprint badge */
+.sprint-badge {
+  display: inline-grid; place-items: center; width: 18px; height: 18px;
+  border-radius: 4px; background: var(--f1-red); color: #fff;
+  font-size: 0.68rem; font-weight: 800; vertical-align: middle;
+}
+
 /* head to head */
 .h2h {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
@@ -126,4 +149,9 @@ table.grid tr:last-child td { border-bottom: none; }
   .h2h { grid-template-columns: 1fr; }
   .vs { display: none; }
   .chart-box { height: 300px; }
+  /* let the two tabs scroll sideways instead of squashing */
+  .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tab { padding: 12px 14px; font-size: 0.82rem; white-space: nowrap; }
+  .title { font-size: clamp(2rem, 11vw, 3rem); }
+  .panel { padding: 16px; }
 }

@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-06-22T17:19:47Z",
+  "generated_at": "2026-06-22T21:54:05Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
+  "total_rounds": 22,
   "rounds": [
     {
       "round": 1,

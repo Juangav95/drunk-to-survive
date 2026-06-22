@@ -8,6 +8,13 @@ let traceChart;
 
 const CONTEST_LABEL = { drivers: "Drivers Contest", teams: "Teams Contest" };
 
+// F1 2026 team liveries — used to color the team pick chips.
+const TEAM_COLORS = {
+  mercedes: "#00D2BE", red_bull: "#3671C6", williams: "#1868DB", ferrari: "#E8002D",
+  alpine: "#0093CC", cadillac: "#C9A24B", mclaren: "#FF8000", aston_martin: "#229971",
+  audi: "#00827F", haas: "#B6BABD", rb: "#6692FF",
+};
+
 async function loadJSON(path) {
   const res = await fetch(path + "?t=" + Date.now()); // cache-bust during dev
   if (!res.ok) throw new Error(`Failed to load ${path} (${res.status})`);
@@ -21,6 +28,17 @@ function completedRounds() {
 // picks list for the active contest: contender.drivers OR contender.teams
 function picksFor(contender, contest) {
   return contest === "drivers" ? contender.drivers : contender.teams;
+}
+
+// render picks as little chips; team chips carry their livery color
+function pickChips(contender, contest) {
+  return picksFor(contender, contest)
+    .map((p) => {
+      const color = contest === "teams" ? TEAM_COLORS[p.id] || "#888" : null;
+      const dot = color ? `<span class="chip-dot" style="background:${color}"></span>` : "";
+      return `<span class="chip">${dot}${p.name}</span>`;
+    })
+    .join("");
 }
 
 function score(round, contenderId, contest) {
@@ -47,15 +65,14 @@ function renderH2H(contest) {
     const avatar = c.photo
       ? `<img class="avatar" src="${c.photo}" alt="${c.name}" />`
       : `<div class="avatar">${c.name[0].toUpperCase()}</div>`;
-    const picks = picksFor(c, contest).map((p) => p.name).join(" · ");
     return `
       <div class="contender ${isLeader ? "leader" : ""}" style="--accent:${c.color}">
         ${avatar}
         <div class="name">${c.name}</div>
         <div class="points">${total}</div>
         <div class="points-label">${CONTEST_LABEL[contest]} pts</div>
-        <div class="picks">${picks}</div>
-        ${isLeader ? `<div class="leader-badge">★ Leading</div>` : ""}
+        <div class="picks">${pickChips(c, contest)}</div>
+        ${isLeader ? `<div class="leader-badge">👑 Leading</div>` : ""}
       </div>`;
   }
 
@@ -115,12 +132,11 @@ function renderStandings(contest) {
   const head = `<thead><tr><th>Pos</th><th>Contender</th><th>Picks</th><th>Total</th><th>Gap</th></tr></thead>`;
   const body = rows
     .map((row, i) => {
-      const picks = picksFor(row.c, contest).map((p) => p.name).join(", ");
       const gap = i === 0 ? "—" : "-" + (leaderTotal - row.total);
       return `<tr>
         <td class="num">${i + 1}</td>
         <td><span class="dot" style="background:${row.c.color}"></span>${row.c.name}</td>
-        <td style="color:var(--muted)">${picks}</td>
+        <td><div class="chips-cell">${pickChips(row.c, contest)}</div></td>
         <td class="num total-col">${row.total}</td>
         <td class="num">${gap}</td>
       </tr>`;
@@ -150,7 +166,8 @@ function renderBreakdown(contest) {
       const sorted = [...cs].sort((a, b) => score(r, b.id, contest).cumulative - score(r, a.id, contest).cumulative);
       const tie = score(r, sorted[0].id, contest).cumulative === score(r, sorted[1].id, contest).cumulative;
       const lead = tie ? "Tie" : sorted[0].name;
-      return `<tr><td class="num">${r.round}</td><td>${r.name}</td>${cells}<td>${lead}</td></tr>`;
+      const sprintBadge = r.sprint ? ` <span class="sprint-badge" title="Sprint weekend">S</span>` : "";
+      return `<tr><td class="num">${r.round}</td><td>${r.name}${sprintBadge}</td>${cells}<td>${lead}</td></tr>`;
     })
     .join("");
   table.innerHTML =
@@ -192,6 +209,13 @@ function renderContest(contest) {
       (CONFIG.title || "Drunk to Survive").replace(/to/i, '<span class="to">2</span>').toUpperCase();
     document.getElementById("siteSubtitle").textContent = CONFIG.subtitle || "";
     if (RESULTS.mock) document.getElementById("mockFlag").hidden = false;
+
+    const done = completedRounds();
+    const last = done.length ? done[done.length - 1] : null;
+    const total = RESULTS.total_rounds || "?";
+    document.getElementById("seasonProgress").textContent = last
+      ? `Round ${last.round} of ${total} — latest: ${last.name}`
+      : "Season not started yet";
 
     document.querySelectorAll(".tab").forEach((t) =>
       t.addEventListener("click", () => renderContest(t.dataset.contest))

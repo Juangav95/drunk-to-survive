@@ -1,5 +1,7 @@
 # 🏎️ Drunk to Survive — F1 2026 Contest Tracker
 
+**🌐 Live site: https://juangav95.github.io/drunk-to-survive/**
+
 A head-to-head tracking site for a season-long Formula 1 betting contest between
 two friends, **Gav** and **Nico**, across the entire **2026 F1 World Championship**.
 

@@ -173,6 +173,18 @@ def main():
         print("WARNING: no completed rounds found — leaving existing results.json untouched.")
         return 1
 
+    # Only rewrite the file if the actual results changed (ignore the timestamp),
+    # so scheduled runs don't create empty commits when nothing has happened.
+    if os.path.exists(OUTPUT_PATH):
+        try:
+            with open(OUTPUT_PATH, encoding="utf-8") as f:
+                existing = json.load(f)
+            if existing.get("rounds") == out_rounds:
+                print("\nNo result changes since last run — results.json left untouched.")
+                return 0
+        except (json.JSONDecodeError, OSError):
+            pass  # unreadable/missing — fall through and write fresh
+
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
         f.write("\n")

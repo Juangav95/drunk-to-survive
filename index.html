@@ -22,15 +22,25 @@
 
   <main class="wrap">
 
+    <!-- TWO CONTESTS, SWITCHED VIA TABS -->
+    <div class="tabs" role="tablist" aria-label="Contests">
+      <button class="tab is-active" id="tab-drivers" role="tab" data-contest="drivers" aria-selected="true">
+        🏎️ Drivers Contest
+      </button>
+      <button class="tab" id="tab-teams" role="tab" data-contest="teams" aria-selected="false">
+        🏆 Teams Contest
+      </button>
+    </div>
+
+    <p class="contest-caption" id="contestCaption"></p>
+
     <!-- HEAD TO HEAD BUBBLES -->
-    <section class="h2h" id="h2h" aria-label="Head to head">
-      <!-- contender cards injected here -->
-    </section>
+    <section class="h2h" id="h2h" aria-label="Head to head"></section>
 
     <!-- THE TRACE -->
     <section class="panel">
       <div class="panel-head">
-        <h2>The Trace</h2>
+        <h2 id="traceTitle">The Trace</h2>
         <span class="hint">Cumulative points after every Grand Prix</span>
       </div>
       <div class="chart-box">

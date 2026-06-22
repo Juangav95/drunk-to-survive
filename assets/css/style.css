@@ -48,6 +48,20 @@ body {
   border: 1px solid rgba(225, 170, 0, 0.3);
 }
 
+/* tabs */
+.tabs {
+  display: flex; gap: 8px; margin: 26px 0 6px; border-bottom: 1px solid var(--line);
+}
+.tab {
+  appearance: none; cursor: pointer; background: transparent; color: var(--muted);
+  border: none; border-bottom: 3px solid transparent; padding: 12px 18px;
+  font-family: "Orbitron", sans-serif; font-size: 0.95rem; letter-spacing: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.is-active { color: var(--text); border-bottom-color: var(--f1-red); }
+.contest-caption { color: var(--muted); font-size: 0.85rem; margin: 12px 0 0; }
+
 /* head to head */
 .h2h {
   display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;

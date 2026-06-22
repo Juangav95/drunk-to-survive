@@ -33,35 +33,47 @@ The site visualizes who's ahead — race by race — all season long.
 
 ---
 
-## 📊 How Scoring Works
+## 📊 How Scoring Works — TWO independent contests
 
-Each race weekend, a contender's points are:
+This is the most important rule: **Drunk to Survive is actually two separate
+competitions running in parallel.** There is **no combined total**.
+
+1. **🏎️ Drivers Contest** — only each contender's **3 drivers'** points count.
+2. **🏆 Teams Contest** — only each contender's **3 teams'** points count.
+
+So every contender has **two independent running scores** (a drivers score and a
+teams score), and there are **two separate winners** at the end of 2026 — a
+Drivers Champion and a Teams Champion.
+
+For each contest, after every race weekend a contender's score grows by:
 
 ```
-weekend_points = (points of their 3 drivers) + (points of their 3 teams)
+drivers_round = points of their 3 drivers   (Grand Prix + Sprint)
+teams_round   = points of their 3 teams      (Grand Prix + Sprint)
 ```
 
 - **Grand Prix (Sunday) points** — official F1 system: 25-18-15-12-10-8-6-4-2-1 (top 10).
 - **Sprint (Saturday) points** — official F1 system: 8-7-6-5-4-3-2-1 (top 8).
 - **Team points** = the constructor's points for that session (i.e. the sum of
   that team's two drivers' points), exactly as F1 awards them.
-- A contender's **season total** is the running sum of all weekend points.
-
-The winner is whoever has the most total points at the end of the 2026 season.
+- Each contest's **season score** is the running sum of that contest's per-round points.
 
 ---
 
 ## ✨ What the Site Shows
 
-- **Head-to-head bubble** — both contenders' photos with their current totals,
+The site has **two tabs — Drivers Contest and Teams Contest** — and each tab shows
+that contest's own:
+
+- **Head-to-head bubbles** — both contenders' photos with their score *in that contest*,
   styled in full F1 livery.
 - **The trace (line chart)** — the headline visual:
   - **X-axis:** each Grand Prix of the season (in order).
-  - **Y-axis:** cumulative total points.
+  - **Y-axis:** cumulative points *in that contest*.
   - **Two lines** (one per contender) so you can see who's pulling ahead.
-- **Standings table** — totals, gap, and per-pick contribution.
-- **Per-race breakdown** — what each pick scored at every round.
-- **F1-themed design** — team colors, driver cards, the works.
+- **Standings table** — score, gap, and the picks.
+- **Per-race breakdown** — what each round added and the running cumulative.
+- **F1-themed design** — team colors, driver/team cards, the works.
 
 ---
 

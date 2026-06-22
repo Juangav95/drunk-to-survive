@@ -6,7 +6,7 @@
     {
       "id": "gav",
       "name": "Gav",
-      "photo": "",
+      "photo": "assets/img/gav.png",
       "color": "#00D2BE",
       "drivers": [
         { "id": "antonelli", "name": "Antonelli" },
@@ -22,7 +22,7 @@
     {
       "id": "nico",
       "name": "Nico",
-      "photo": "",
+      "photo": "assets/img/nico.png",
       "color": "#E8002D",
       "drivers": [
         { "id": "hamilton", "name": "Hamilton" },

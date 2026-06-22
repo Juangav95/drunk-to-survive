@@ -1,0 +1,45 @@
+name: Update results
+
+# Fetches the latest 2026 F1 results from the Jolpica API, recomputes both
+# contests' points, and commits data/results.json if anything changed.
+#
+# Two ways it runs:
+#   1. One click — go to the Actions tab, pick "Update results", click "Run workflow".
+#   2. Automatically — on the schedule below (after race weekends).
+
+on:
+  workflow_dispatch:        # the one-click button
+  schedule:
+    # Mondays & Tuesdays at 08:00 UTC — catches results posted after Sunday races.
+    - cron: "0 8 * * 1,2"
+
+permissions:
+  contents: write           # needed so the job can commit results back to the repo
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch results and recompute points
+        run: python3 scripts/fetch_results.py
+
+      - name: Commit updated results (if changed)
+        run: |
+          git config user.name "drunk-to-survive-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/results.json)" ]; then
+            git add data/results.json
+            git commit -m "Update results from Jolpica [skip ci]"
+            git push
+            echo "Results updated and pushed."
+          else
+            echo "No changes — results are already up to date."
+          fi

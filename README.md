@@ -110,10 +110,21 @@ the site keeps working even if the API is temporarily down.
 ## 🗺️ Roadmap
 
 - [x] **Phase 0 — Documentation** (this README + `docs/SPEC.md`)
-- [ ] **Phase 1 — Site skeleton + mock data**, deployed to GitHub Pages
-- [ ] **Phase 2 — Data pipeline**: Jolpica fetch + points calc + GitHub Action
+- [x] **Phase 1 — Site skeleton** (two-contest, tabbed) with mock data
+- [x] **Phase 2 — Data pipeline**: Jolpica fetch + points calc + GitHub Action
 - [ ] **Phase 3 — Full F1 theming**: contender bubbles, livery, polish
-- [ ] **Phase 4 — Automation**: scheduled auto-updates after race weekends
+- [ ] **Phase 4 — Automation polish**: tune the schedule, surface "last updated"
+
+## ▶️ Updating the results
+
+Results come from the **Update results** GitHub Action (`.github/workflows/update-results.yml`):
+
+- **One click:** repo → **Actions** tab → **Update results** → **Run workflow**.
+- **Automatic:** it also runs Mon/Tue mornings (UTC) to pick up weekend races.
+
+The Action runs `scripts/fetch_results.py`, which pulls 2026 race + sprint results
+from Jolpica, recomputes both contests, and commits `data/results.json`. After it
+runs, `git pull` locally to get the refreshed data.
 
 ---
 

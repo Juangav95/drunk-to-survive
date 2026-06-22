@@ -1,22 +1,55 @@
 {
-  "generated_at": "2026-06-22T16:00:00Z",
+  "generated_at": "2026-06-22T17:19:47Z",
   "season": 2026,
-  "mock": true,
+  "source": "Jolpica-F1 API (api.jolpi.ca)",
   "rounds": [
     {
       "round": 1,
       "name": "Australian Grand Prix",
       "short": "AUS",
       "date": "2026-03-08",
+      "sprint": false,
       "completed": true,
       "scores": {
         "gav": {
-          "drivers": { "round": 43, "cumulative": 43, "detail": { "antonelli": 18, "piastri": 25, "hadjar": 0 } },
-          "teams":   { "round": 42, "cumulative": 42, "detail": { "mercedes": 30, "red_bull": 10, "williams": 2 } }
+          "drivers": {
+            "round": 18,
+            "cumulative": 18,
+            "detail": {
+              "antonelli": 18,
+              "piastri": 0,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 51,
+            "cumulative": 51,
+            "detail": {
+              "mercedes": 43,
+              "red_bull": 8,
+              "williams": 0
+            }
+          }
         },
         "nico": {
-          "drivers": { "round": 33, "cumulative": 33, "detail": { "hamilton": 15, "antonelli": 18, "colapinto": 0 } },
-          "teams":   { "round": 31, "cumulative": 31, "detail": { "ferrari": 27, "alpine": 4, "cadillac": 0 } }
+          "drivers": {
+            "round": 30,
+            "cumulative": 30,
+            "detail": {
+              "hamilton": 12,
+              "antonelli": 18,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 28,
+            "cumulative": 28,
+            "detail": {
+              "ferrari": 27,
+              "alpine": 1,
+              "cadillac": 0
+            }
+          }
         }
       }
     },
@@ -24,16 +57,49 @@
       "round": 2,
       "name": "Chinese Grand Prix",
       "short": "CHN",
-      "date": "2026-03-22",
+      "date": "2026-03-15",
+      "sprint": true,
       "completed": true,
       "scores": {
         "gav": {
-          "drivers": { "round": 30, "cumulative": 73, "detail": { "antonelli": 10, "piastri": 18, "hadjar": 2 } },
-          "teams":   { "round": 38, "cumulative": 80, "detail": { "mercedes": 22, "red_bull": 14, "williams": 2 } }
+          "drivers": {
+            "round": 36,
+            "cumulative": 54,
+            "detail": {
+              "antonelli": 29,
+              "piastri": 3,
+              "hadjar": 4
+            }
+          },
+          "teams": {
+            "round": 61,
+            "cumulative": 112,
+            "detail": {
+              "mercedes": 55,
+              "red_bull": 4,
+              "williams": 2
+            }
+          }
         },
         "nico": {
-          "drivers": { "round": 40, "cumulative": 73, "detail": { "hamilton": 18, "antonelli": 10, "colapinto": 12 } },
-          "teams":   { "round": 35, "cumulative": 66, "detail": { "ferrari": 28, "alpine": 7, "cadillac": 0 } }
+          "drivers": {
+            "round": 51,
+            "cumulative": 81,
+            "detail": {
+              "hamilton": 21,
+              "antonelli": 29,
+              "colapinto": 1
+            }
+          },
+          "teams": {
+            "round": 49,
+            "cumulative": 77,
+            "detail": {
+              "ferrari": 40,
+              "alpine": 9,
+              "cadillac": 0
+            }
+          }
         }
       }
     },
@@ -41,50 +107,249 @@
       "round": 3,
       "name": "Japanese Grand Prix",
       "short": "JPN",
-      "date": "2026-04-05",
+      "date": "2026-03-29",
+      "sprint": false,
       "completed": true,
       "scores": {
         "gav": {
-          "drivers": { "round": 25, "cumulative": 98, "detail": { "antonelli": 12, "piastri": 13, "hadjar": 0 } },
-          "teams":   { "round": 30, "cumulative": 110, "detail": { "mercedes": 20, "red_bull": 8, "williams": 2 } }
+          "drivers": {
+            "round": 43,
+            "cumulative": 97,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 18,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 41,
+            "cumulative": 153,
+            "detail": {
+              "mercedes": 37,
+              "red_bull": 4,
+              "williams": 0
+            }
+          }
         },
         "nico": {
-          "drivers": { "round": 35, "cumulative": 108, "detail": { "hamilton": 20, "antonelli": 12, "colapinto": 3 } },
-          "teams":   { "round": 33, "cumulative": 99, "detail": { "ferrari": 26, "alpine": 7, "cadillac": 0 } }
+          "drivers": {
+            "round": 33,
+            "cumulative": 114,
+            "detail": {
+              "hamilton": 8,
+              "antonelli": 25,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 29,
+            "cumulative": 106,
+            "detail": {
+              "ferrari": 23,
+              "alpine": 6,
+              "cadillac": 0
+            }
+          }
         }
       }
     },
     {
       "round": 4,
-      "name": "Bahrain Grand Prix",
-      "short": "BHR",
-      "date": "2026-04-19",
+      "name": "Miami Grand Prix",
+      "short": "MIA",
+      "date": "2026-05-03",
+      "sprint": true,
       "completed": true,
       "scores": {
         "gav": {
-          "drivers": { "round": 38, "cumulative": 136, "detail": { "antonelli": 20, "piastri": 18, "hadjar": 0 } },
-          "teams":   { "round": 41, "cumulative": 151, "detail": { "mercedes": 28, "red_bull": 11, "williams": 2 } }
+          "drivers": {
+            "round": 50,
+            "cumulative": 147,
+            "detail": {
+              "antonelli": 28,
+              "piastri": 22,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 62,
+            "cumulative": 215,
+            "detail": {
+              "mercedes": 45,
+              "red_bull": 14,
+              "williams": 3
+            }
+          }
         },
         "nico": {
-          "drivers": { "round": 22, "cumulative": 130, "detail": { "hamilton": 2, "antonelli": 20, "colapinto": 0 } },
-          "teams":   { "round": 28, "cumulative": 127, "detail": { "ferrari": 24, "alpine": 4, "cadillac": 0 } }
+          "drivers": {
+            "round": 44,
+            "cumulative": 158,
+            "detail": {
+              "hamilton": 10,
+              "antonelli": 28,
+              "colapinto": 6
+            }
+          },
+          "teams": {
+            "round": 27,
+            "cumulative": 133,
+            "detail": {
+              "ferrari": 20,
+              "alpine": 7,
+              "cadillac": 0
+            }
+          }
         }
       }
     },
     {
       "round": 5,
-      "name": "Saudi Arabian Grand Prix",
-      "short": "SAU",
-      "date": "2026-05-03",
+      "name": "Canadian Grand Prix",
+      "short": "CAN",
+      "date": "2026-05-24",
+      "sprint": true,
       "completed": true,
       "scores": {
         "gav": {
-          "drivers": { "round": 20, "cumulative": 156, "detail": { "antonelli": 8, "piastri": 12, "hadjar": 0 } },
-          "teams":   { "round": 26, "cumulative": 177, "detail": { "mercedes": 16, "red_bull": 8, "williams": 2 } }
+          "drivers": {
+            "round": 46,
+            "cumulative": 193,
+            "detail": {
+              "antonelli": 31,
+              "piastri": 5,
+              "hadjar": 10
+            }
+          },
+          "teams": {
+            "round": 68,
+            "cumulative": 283,
+            "detail": {
+              "mercedes": 39,
+              "red_bull": 27,
+              "williams": 2
+            }
+          }
         },
         "nico": {
-          "drivers": { "round": 33, "cumulative": 163, "detail": { "hamilton": 18, "antonelli": 8, "colapinto": 7 } },
-          "teams":   { "round": 36, "cumulative": 163, "detail": { "ferrari": 29, "alpine": 7, "cadillac": 0 } }
+          "drivers": {
+            "round": 60,
+            "cumulative": 218,
+            "detail": {
+              "hamilton": 21,
+              "antonelli": 31,
+              "colapinto": 8
+            }
+          },
+          "teams": {
+            "round": 49,
+            "cumulative": 182,
+            "detail": {
+              "ferrari": 37,
+              "alpine": 12,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 6,
+      "name": "Monaco Grand Prix",
+      "short": "MON",
+      "date": "2026-06-07",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 47,
+            "cumulative": 240,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 10,
+              "hadjar": 12
+            }
+          },
+          "teams": {
+            "round": 41,
+            "cumulative": 324,
+            "detail": {
+              "mercedes": 25,
+              "red_bull": 12,
+              "williams": 4
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 43,
+            "cumulative": 261,
+            "detail": {
+              "hamilton": 18,
+              "antonelli": 25,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 33,
+            "cumulative": 215,
+            "detail": {
+              "ferrari": 18,
+              "alpine": 15,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 7,
+      "name": "Barcelona Grand Prix",
+      "short": "BAR",
+      "date": "2026-06-14",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 18,
+            "cumulative": 258,
+            "detail": {
+              "antonelli": 0,
+              "piastri": 10,
+              "hadjar": 8
+            }
+          },
+          "teams": {
+            "round": 38,
+            "cumulative": 362,
+            "detail": {
+              "mercedes": 18,
+              "red_bull": 20,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 26,
+            "cumulative": 287,
+            "detail": {
+              "hamilton": 25,
+              "antonelli": 0,
+              "colapinto": 1
+            }
+          },
+          "teams": {
+            "round": 32,
+            "cumulative": 247,
+            "detail": {
+              "ferrari": 25,
+              "alpine": 7,
+              "cadillac": 0
+            }
+          }
         }
       }
     }

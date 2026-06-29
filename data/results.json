@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T21:54:05Z",
+  "generated_at": "2026-06-29T12:30:04Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 22,
@@ -348,6 +348,56 @@
             "detail": {
               "ferrari": 25,
               "alpine": 7,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 8,
+      "name": "Austrian Grand Prix",
+      "short": "AUT",
+      "date": "2026-06-28",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 35,
+            "cumulative": 293,
+            "detail": {
+              "antonelli": 15,
+              "piastri": 12,
+              "hadjar": 8
+            }
+          },
+          "teams": {
+            "round": 66,
+            "cumulative": 428,
+            "detail": {
+              "mercedes": 40,
+              "red_bull": 26,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 25,
+            "cumulative": 312,
+            "detail": {
+              "hamilton": 10,
+              "antonelli": 15,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 14,
+            "cumulative": 261,
+            "detail": {
+              "ferrari": 14,
+              "alpine": 0,
               "cadillac": 0
             }
           }

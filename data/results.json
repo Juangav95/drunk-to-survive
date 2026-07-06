@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T12:30:04Z",
+  "generated_at": "2026-07-06T12:03:15Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 22,
@@ -398,6 +398,56 @@
             "detail": {
               "ferrari": 14,
               "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 9,
+      "name": "British Grand Prix",
+      "short": "GBR",
+      "date": "2026-07-05",
+      "sprint": true,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 20,
+            "cumulative": 313,
+            "detail": {
+              "antonelli": 8,
+              "piastri": 2,
+              "hadjar": 10
+            }
+          },
+          "teams": {
+            "round": 44,
+            "cumulative": 472,
+            "detail": {
+              "mercedes": 31,
+              "red_bull": 13,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 32,
+            "cumulative": 344,
+            "detail": {
+              "hamilton": 22,
+              "antonelli": 8,
+              "colapinto": 2
+            }
+          },
+          "teams": {
+            "round": 54,
+            "cumulative": 315,
+            "detail": {
+              "ferrari": 51,
+              "alpine": 3,
               "cadillac": 0
             }
           }

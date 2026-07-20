@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:03:15Z",
+  "generated_at": "2026-07-20T10:49:35Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 22,
@@ -448,6 +448,56 @@
             "detail": {
               "ferrari": 51,
               "alpine": 3,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 10,
+      "name": "Belgian Grand Prix",
+      "short": "BEL",
+      "date": "2026-07-19",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 43,
+            "cumulative": 356,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 10,
+              "hadjar": 8
+            }
+          },
+          "teams": {
+            "round": 48,
+            "cumulative": 520,
+            "detail": {
+              "mercedes": 25,
+              "red_bull": 23,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 38,
+            "cumulative": 382,
+            "detail": {
+              "hamilton": 12,
+              "antonelli": 25,
+              "colapinto": 1
+            }
+          },
+          "teams": {
+            "round": 31,
+            "cumulative": 346,
+            "detail": {
+              "ferrari": 30,
+              "alpine": 1,
               "cadillac": 0
             }
           }

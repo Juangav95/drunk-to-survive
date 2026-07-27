@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T10:49:35Z",
+  "generated_at": "2026-07-27T11:17:43Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 22,
@@ -498,6 +498,56 @@
             "detail": {
               "ferrari": 30,
               "alpine": 1,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 11,
+      "name": "Hungarian Grand Prix",
+      "short": "HUN",
+      "date": "2026-07-26",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 23,
+            "cumulative": 379,
+            "detail": {
+              "antonelli": 15,
+              "piastri": 0,
+              "hadjar": 8
+            }
+          },
+          "teams": {
+            "round": 47,
+            "cumulative": 567,
+            "detail": {
+              "mercedes": 21,
+              "red_bull": 26,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 25,
+            "cumulative": 407,
+            "detail": {
+              "hamilton": 10,
+              "antonelli": 15,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 22,
+            "cumulative": 368,
+            "detail": {
+              "ferrari": 22,
+              "alpine": 0,
               "cadillac": 0
             }
           }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T11:19:41Z",
+  "generated_at": "2026-08-24T08:44:12Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -548,6 +548,56 @@
             "detail": {
               "ferrari": 22,
               "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 12,
+      "name": "Dutch Grand Prix",
+      "short": "NED",
+      "date": "2026-08-23",
+      "sprint": true,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 35,
+            "cumulative": 414,
+            "detail": {
+              "antonelli": 23,
+              "piastri": 12,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 55,
+            "cumulative": 622,
+            "detail": {
+              "mercedes": 46,
+              "red_bull": 9,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 37,
+            "cumulative": 444,
+            "detail": {
+              "hamilton": 14,
+              "antonelli": 23,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 33,
+            "cumulative": 401,
+            "detail": {
+              "ferrari": 31,
+              "alpine": 2,
               "cadillac": 0
             }
           }

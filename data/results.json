@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T08:44:12Z",
+  "generated_at": "2026-09-07T13:57:48Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -264,20 +264,20 @@
       "scores": {
         "gav": {
           "drivers": {
-            "round": 47,
-            "cumulative": 240,
+            "round": 52,
+            "cumulative": 245,
             "detail": {
               "antonelli": 25,
-              "piastri": 10,
-              "hadjar": 12
+              "piastri": 12,
+              "hadjar": 15
             }
           },
           "teams": {
-            "round": 41,
-            "cumulative": 324,
+            "round": 44,
+            "cumulative": 327,
             "detail": {
               "mercedes": 25,
-              "red_bull": 12,
+              "red_bull": 15,
               "williams": 4
             }
           }
@@ -293,11 +293,11 @@
             }
           },
           "teams": {
-            "round": 33,
-            "cumulative": 215,
+            "round": 24,
+            "cumulative": 206,
             "detail": {
               "ferrari": 18,
-              "alpine": 15,
+              "alpine": 6,
               "cadillac": 0
             }
           }
@@ -315,7 +315,7 @@
         "gav": {
           "drivers": {
             "round": 18,
-            "cumulative": 258,
+            "cumulative": 263,
             "detail": {
               "antonelli": 0,
               "piastri": 10,
@@ -324,7 +324,7 @@
           },
           "teams": {
             "round": 38,
-            "cumulative": 362,
+            "cumulative": 365,
             "detail": {
               "mercedes": 18,
               "red_bull": 20,
@@ -344,7 +344,7 @@
           },
           "teams": {
             "round": 32,
-            "cumulative": 247,
+            "cumulative": 238,
             "detail": {
               "ferrari": 25,
               "alpine": 7,
@@ -365,7 +365,7 @@
         "gav": {
           "drivers": {
             "round": 35,
-            "cumulative": 293,
+            "cumulative": 298,
             "detail": {
               "antonelli": 15,
               "piastri": 12,
@@ -374,7 +374,7 @@
           },
           "teams": {
             "round": 66,
-            "cumulative": 428,
+            "cumulative": 431,
             "detail": {
               "mercedes": 40,
               "red_bull": 26,
@@ -394,7 +394,7 @@
           },
           "teams": {
             "round": 14,
-            "cumulative": 261,
+            "cumulative": 252,
             "detail": {
               "ferrari": 14,
               "alpine": 0,
@@ -415,7 +415,7 @@
         "gav": {
           "drivers": {
             "round": 20,
-            "cumulative": 313,
+            "cumulative": 318,
             "detail": {
               "antonelli": 8,
               "piastri": 2,
@@ -424,7 +424,7 @@
           },
           "teams": {
             "round": 44,
-            "cumulative": 472,
+            "cumulative": 475,
             "detail": {
               "mercedes": 31,
               "red_bull": 13,
@@ -444,7 +444,7 @@
           },
           "teams": {
             "round": 54,
-            "cumulative": 315,
+            "cumulative": 306,
             "detail": {
               "ferrari": 51,
               "alpine": 3,
@@ -465,7 +465,7 @@
         "gav": {
           "drivers": {
             "round": 43,
-            "cumulative": 356,
+            "cumulative": 361,
             "detail": {
               "antonelli": 25,
               "piastri": 10,
@@ -474,7 +474,7 @@
           },
           "teams": {
             "round": 48,
-            "cumulative": 520,
+            "cumulative": 523,
             "detail": {
               "mercedes": 25,
               "red_bull": 23,
@@ -494,7 +494,7 @@
           },
           "teams": {
             "round": 31,
-            "cumulative": 346,
+            "cumulative": 337,
             "detail": {
               "ferrari": 30,
               "alpine": 1,
@@ -515,7 +515,7 @@
         "gav": {
           "drivers": {
             "round": 23,
-            "cumulative": 379,
+            "cumulative": 384,
             "detail": {
               "antonelli": 15,
               "piastri": 0,
@@ -524,7 +524,7 @@
           },
           "teams": {
             "round": 47,
-            "cumulative": 567,
+            "cumulative": 570,
             "detail": {
               "mercedes": 21,
               "red_bull": 26,
@@ -544,7 +544,7 @@
           },
           "teams": {
             "round": 22,
-            "cumulative": 368,
+            "cumulative": 359,
             "detail": {
               "ferrari": 22,
               "alpine": 0,
@@ -565,7 +565,7 @@
         "gav": {
           "drivers": {
             "round": 35,
-            "cumulative": 414,
+            "cumulative": 419,
             "detail": {
               "antonelli": 23,
               "piastri": 12,
@@ -574,7 +574,7 @@
           },
           "teams": {
             "round": 55,
-            "cumulative": 622,
+            "cumulative": 625,
             "detail": {
               "mercedes": 46,
               "red_bull": 9,
@@ -594,10 +594,60 @@
           },
           "teams": {
             "round": 33,
-            "cumulative": 401,
+            "cumulative": 392,
             "detail": {
               "ferrari": 31,
               "alpine": 2,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 13,
+      "name": "Italian Grand Prix",
+      "short": "ITA",
+      "date": "2026-09-06",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 35,
+            "cumulative": 454,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 10,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 58,
+            "cumulative": 683,
+            "detail": {
+              "mercedes": 43,
+              "red_bull": 15,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 35,
+            "cumulative": 479,
+            "detail": {
+              "hamilton": 8,
+              "antonelli": 25,
+              "colapinto": 2
+            }
+          },
+          "teams": {
+            "round": 16,
+            "cumulative": 408,
+            "detail": {
+              "ferrari": 8,
+              "alpine": 8,
               "cadillac": 0
             }
           }

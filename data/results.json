@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T13:57:48Z",
+  "generated_at": "2026-09-14T14:42:51Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -648,6 +648,56 @@
             "detail": {
               "ferrari": 8,
               "alpine": 8,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 14,
+      "name": "Spanish Grand Prix",
+      "short": "ESP",
+      "date": "2026-09-13",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 29,
+            "cumulative": 483,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 4,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 61,
+            "cumulative": 744,
+            "detail": {
+              "mercedes": 35,
+              "red_bull": 26,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 31,
+            "cumulative": 510,
+            "detail": {
+              "hamilton": 0,
+              "antonelli": 25,
+              "colapinto": 6
+            }
+          },
+          "teams": {
+            "round": 18,
+            "cumulative": 426,
+            "detail": {
+              "ferrari": 12,
+              "alpine": 6,
               "cadillac": 0
             }
           }

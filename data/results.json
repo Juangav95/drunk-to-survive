@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T14:42:51Z",
+  "generated_at": "2026-09-28T16:26:17Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -698,6 +698,56 @@
             "detail": {
               "ferrari": 12,
               "alpine": 6,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 15,
+      "name": "Azerbaijan Grand Prix",
+      "short": "AZE",
+      "date": "2026-09-26",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 25,
+            "cumulative": 508,
+            "detail": {
+              "antonelli": 10,
+              "piastri": 0,
+              "hadjar": 15
+            }
+          },
+          "teams": {
+            "round": 69,
+            "cumulative": 813,
+            "detail": {
+              "mercedes": 35,
+              "red_bull": 33,
+              "williams": 1
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 18,
+            "cumulative": 528,
+            "detail": {
+              "hamilton": 8,
+              "antonelli": 10,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 20,
+            "cumulative": 446,
+            "detail": {
+              "ferrari": 20,
+              "alpine": 0,
               "cadillac": 0
             }
           }

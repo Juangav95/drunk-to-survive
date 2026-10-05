@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:26:17Z",
+  "generated_at": "2026-10-05T16:46:59Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -747,6 +747,56 @@
             "cumulative": 446,
             "detail": {
               "ferrari": 20,
+              "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 16,
+      "name": "Bahrain Grand Prix in Malaysia",
+      "short": "BHR",
+      "date": "2026-10-04",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 36,
+            "cumulative": 544,
+            "detail": {
+              "antonelli": 18,
+              "piastri": 8,
+              "hadjar": 10
+            }
+          },
+          "teams": {
+            "round": 53,
+            "cumulative": 866,
+            "detail": {
+              "mercedes": 18,
+              "red_bull": 35,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 33,
+            "cumulative": 561,
+            "detail": {
+              "hamilton": 15,
+              "antonelli": 18,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 27,
+            "cumulative": 473,
+            "detail": {
+              "ferrari": 27,
               "alpine": 0,
               "cadillac": 0
             }

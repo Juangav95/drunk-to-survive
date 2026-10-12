@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T16:46:59Z",
+  "generated_at": "2026-10-12T17:20:37Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -797,6 +797,56 @@
             "cumulative": 473,
             "detail": {
               "ferrari": 27,
+              "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 17,
+      "name": "Singapore Grand Prix",
+      "short": "SGP",
+      "date": "2026-10-11",
+      "sprint": true,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 31,
+            "cumulative": 575,
+            "detail": {
+              "antonelli": 20,
+              "piastri": 10,
+              "hadjar": 1
+            }
+          },
+          "teams": {
+            "round": 56,
+            "cumulative": 922,
+            "detail": {
+              "mercedes": 22,
+              "red_bull": 34,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 35,
+            "cumulative": 596,
+            "detail": {
+              "hamilton": 15,
+              "antonelli": 20,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 39,
+            "cumulative": 512,
+            "detail": {
+              "ferrari": 39,
               "alpine": 0,
               "cadillac": 0
             }

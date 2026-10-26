@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T17:20:37Z",
+  "generated_at": "2026-10-26T14:49:54Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -848,6 +848,56 @@
             "detail": {
               "ferrari": 39,
               "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 18,
+      "name": "United States Grand Prix",
+      "short": "USA",
+      "date": "2026-10-25",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 39,
+            "cumulative": 614,
+            "detail": {
+              "antonelli": 25,
+              "piastri": 6,
+              "hadjar": 8
+            }
+          },
+          "teams": {
+            "round": 52,
+            "cumulative": 974,
+            "detail": {
+              "mercedes": 29,
+              "red_bull": 23,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 37,
+            "cumulative": 633,
+            "detail": {
+              "hamilton": 12,
+              "antonelli": 25,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 31,
+            "cumulative": 543,
+            "detail": {
+              "ferrari": 30,
+              "alpine": 1,
               "cadillac": 0
             }
           }

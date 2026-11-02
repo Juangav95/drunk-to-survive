@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:49:54Z",
+  "generated_at": "2026-11-02T17:47:09Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -898,6 +898,56 @@
             "detail": {
               "ferrari": 30,
               "alpine": 1,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 19,
+      "name": "Mexico City Grand Prix",
+      "short": "MEX",
+      "date": "2026-11-01",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 21,
+            "cumulative": 635,
+            "detail": {
+              "antonelli": 15,
+              "piastri": 6,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 48,
+            "cumulative": 1022,
+            "detail": {
+              "mercedes": 23,
+              "red_bull": 25,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 37,
+            "cumulative": 670,
+            "detail": {
+              "hamilton": 18,
+              "antonelli": 15,
+              "colapinto": 4
+            }
+          },
+          "teams": {
+            "round": 35,
+            "cumulative": 578,
+            "detail": {
+              "ferrari": 30,
+              "alpine": 5,
               "cadillac": 0
             }
           }

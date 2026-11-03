@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T17:47:09Z",
+  "generated_at": "2026-11-03T15:47:47Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -914,40 +914,40 @@
       "scores": {
         "gav": {
           "drivers": {
-            "round": 21,
-            "cumulative": 635,
+            "round": 17,
+            "cumulative": 631,
             "detail": {
               "antonelli": 15,
-              "piastri": 6,
-              "hadjar": 0
+              "piastri": 0,
+              "hadjar": 2
             }
           },
           "teams": {
-            "round": 48,
-            "cumulative": 1022,
+            "round": 50,
+            "cumulative": 1024,
             "detail": {
               "mercedes": 23,
-              "red_bull": 25,
+              "red_bull": 27,
               "williams": 0
             }
           }
         },
         "nico": {
           "drivers": {
-            "round": 37,
-            "cumulative": 670,
+            "round": 33,
+            "cumulative": 666,
             "detail": {
               "hamilton": 18,
               "antonelli": 15,
-              "colapinto": 4
+              "colapinto": 0
             }
           },
           "teams": {
-            "round": 35,
-            "cumulative": 578,
+            "round": 30,
+            "cumulative": 573,
             "detail": {
               "ferrari": 30,
-              "alpine": 5,
+              "alpine": 0,
               "cadillac": 0
             }
           }

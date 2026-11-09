@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T15:47:47Z",
+  "generated_at": "2026-11-09T18:17:11Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -947,6 +947,56 @@
             "cumulative": 573,
             "detail": {
               "ferrari": 30,
+              "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 20,
+      "name": "Brazilian Grand Prix",
+      "short": "BRA",
+      "date": "2026-11-08",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 33,
+            "cumulative": 664,
+            "detail": {
+              "antonelli": 10,
+              "piastri": 8,
+              "hadjar": 15
+            }
+          },
+          "teams": {
+            "round": 55,
+            "cumulative": 1079,
+            "detail": {
+              "mercedes": 22,
+              "red_bull": 33,
+              "williams": 0
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 12,
+            "cumulative": 678,
+            "detail": {
+              "hamilton": 2,
+              "antonelli": 10,
+              "colapinto": 0
+            }
+          },
+          "teams": {
+            "round": 6,
+            "cumulative": 579,
+            "detail": {
+              "ferrari": 6,
               "alpine": 0,
               "cadillac": 0
             }

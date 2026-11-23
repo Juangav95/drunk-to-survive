@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T18:17:11Z",
+  "generated_at": "2026-11-23T19:48:56Z",
   "season": 2026,
   "source": "Jolpica-F1 API (api.jolpi.ca)",
   "total_rounds": 23,
@@ -998,6 +998,56 @@
             "detail": {
               "ferrari": 6,
               "alpine": 0,
+              "cadillac": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "round": 21,
+      "name": "Las Vegas Grand Prix",
+      "short": "LAS",
+      "date": "2026-11-22",
+      "sprint": false,
+      "completed": true,
+      "scores": {
+        "gav": {
+          "drivers": {
+            "round": 27,
+            "cumulative": 691,
+            "detail": {
+              "antonelli": 12,
+              "piastri": 15,
+              "hadjar": 0
+            }
+          },
+          "teams": {
+            "round": 43,
+            "cumulative": 1122,
+            "detail": {
+              "mercedes": 14,
+              "red_bull": 25,
+              "williams": 4
+            }
+          }
+        },
+        "nico": {
+          "drivers": {
+            "round": 26,
+            "cumulative": 704,
+            "detail": {
+              "hamilton": 6,
+              "antonelli": 12,
+              "colapinto": 8
+            }
+          },
+          "teams": {
+            "round": 25,
+            "cumulative": 604,
+            "detail": {
+              "ferrari": 7,
+              "alpine": 18,
               "cadillac": 0
             }
           }
